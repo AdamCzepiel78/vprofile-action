@@ -1,0 +1,10 @@
+name: Vprofile actions
+on: workflow_dispatch
+env: 
+  AWS_REGION: eu-central-1
+  ECR_REPOSITORY: "aczvprofileapp"
+  EKS_CLUSTER: "aczvprofile-eks"
+
+jobs:
+  Testing: 
+    runs-on: ubuntu-latest
